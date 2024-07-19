@@ -7,7 +7,7 @@ document.getElementById('dataForm').addEventListener('submit', function(event) {
     const data = {};
     formData.forEach((value, key) => (data[key] = value));
 
-    fetch('URL_DO_SEU_SCRIPT', {
+    fetch('https://script.google.com/macros/s/AKfycbxdt4vZ_oUZBq82wqhqTTMmfVWmGk60b1W9k6V63UrbErWZtGdeAvEjyMQDG4IhgQOl/exec', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
