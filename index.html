@@ -23,7 +23,7 @@
       
       const formData = new FormData(event.target);
       const jsonData = Object.fromEntries(formData.entries());
-      const endpointUrl = "YOUR_SCRIPT_URL"; // Substitua 'YOUR_SCRIPT_URL' pela URL gerada no Google Apps Script
+      const endpointUrl = "https://script.google.com/macros/s/AKfycbzm3ycepMw1BuSLoVEB3UnZ29xyWePw_U_cf6dt8CCT/dev"; // Substitua 'YOUR_SCRIPT_URL' pela URL gerada no Google Apps Script
 
       fetch(endpointUrl, {
         method: "POST",
