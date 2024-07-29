@@ -1,206 +1,212 @@
-.topo {
-    border: 0px solid #ffffff;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
-    background-image: url(https://lh4.googleusercontent.com/XEDlK9ZVVRDq4VQ1el6jz1mY1AQQK3-5PBsBkf7KZydPAEglB1CPpqKNF689_GTiN5-2QF4pDilYvrrxQThEy6FUh9C6QWrpM6amJpuV7H1ljMdShhHXeaq0QJiLbVyhnw=w6912);
-    background-size: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.img-box{
+background-color: rgba(0, 0, 0, 0.0);
+display: flex;
+align-items: center;
+border-radius: 0 20px 20px 0;
+margin: 0px 0px 0px -50px;
+}
+.img-box img{
+width: 100%;
+border-radius: 0 20px 20px 0;
 }
 .titulo {
-    text-align: center;
+text-align: center;
+font-size: 30px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body{
+    background: linear-gradient(-45deg, #86FD8F, #FFF655);
+    /*background: linear-gradient(-45deg, #FFF655, #86FD8F, #009ADA, #F65D06, #FF107C);
+    
+    */
+    background-size: 600% 100%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: top;
+    padding: 5px 5px;
+    margin: 5px 5px;
 }
 .text {
-    text-align: justify;
+text-align: justify;
+}
+.p-5-form {
+background-color: hsla(0, 0%, 0%, 0.0);
+padding: 30px 40px;
+width: 48%;
+border-radius: 40px  40px 40px 40px;
+}
+.p-5-top {
+background-color: rgba(0, 0, 0, 0.0);
+width: 48%;
+align-items: center;
+padding: 20px;
+border-radius: 40px  40px 40px 40px;
+top: 20px;
+}
+.p-5-top2 {
+width: 48%; /* == (50vw - (width of vertical scrollbar)) */
+height: 100%; /* == (50vh - (height of horizontal scrollbar)) */
+margin: 0%; /* == (5vw - (width of vertical scrollbar)) */
+padding: 0%; /* == (5vw - (width of vertical scrollbar)) */
+padding: 20px;
+/* ################################################################# */
 }
 .custom-control-label {
-    text-align: center;
-    align-self: center;
+text-align: center;
+align-self: center;  
 }
 .custom-control-input {
-    align-self: end;
-    margin: 2%;
+align-self: end;
+margin: 2%;
+width: 50%;
 }
 .mb-3 {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+max-width: 800px;
+margin: 40px auto;
+padding: 20px;
+text-align: center;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.32);
+border-radius: 20px;
+outline: none;
+border: 2px solid transparent;
+padding: 15px;
+font-size: 20px;
+transition: all 0.4s ease;
 }
-.d-block.my-3 {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+.d-block.my-3 label{
+    color: #000000;
+    display: block;
+    margin-bottom: 0px;
+}
+.d-block.my-3 input{
+width: 100%;
+height: 20px;
+background-color: rgba(255, 255, 255, 0.32);
+border-radius: 20px;
+outline: none;
+border: 2px solid transparent;
+padding: 15px;
+font-size: 15px;
+transition: all 0.4s ease;
+}
+.linha-multipla {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(50%, 50%));
+align-content: center;
+margin: 20px auto;
+}
+.multipla {
+justify-items: center;
+margin: 20px auto;
+align-items: baseline;
 }
 .linha-simb {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    justify-items: center;
-    margin: 20px auto;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+justify-items: center;
+margin: 10px auto;
 }
 .simbolos {
-    display: grid;
-    grid-template-columns: repeat(auto, minmax(100px, 1fr));
-    justify-items: center;
-    margin: 20px auto;
+display: grid;
+grid-template-columns: repeat(auto, minmax(90px, 1fr));
+justify-items: center;
+margin: 10px auto;
 }
 .img_simbolo {
-    width: 100px; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção da imagem  align-items: flex-start; */
+width: 100px; /* Ajuste a largura conforme necessário */
+height: auto; /* Mantém a proporção da imagem  align-items: flex-start; */
 }
 
-/* Existing styles */
-
-@media screen and (min-width: 480px) and (max-width: 1920px) {
-  #linTel {
-      grid-template-columns: repeat(3, minmax(100px, 10fr));
-  }
-  #linTel .form-label, #linTel .custom-control, #linTel .form-control {
-    margin-right: 5px;
-  }
-  #linTel .custom-control {
-    display: flex;
-    align-items: center;
-  }
-  #linTel .custom-control input {
-    margin-right: 5px;
-  }
-
-}
-
-/* ########################################################################################## */
-
-/* Add media queries for responsiveness */
-
-/* Extra large screens (desktops) */
-@media screen and (min-width: 1920px) {
-    .topo {
-      height: 400px;
-    }
-    .mb-3, .d-block.my-3 {
-      max-width: 1200px;
-    }
-    .linha-simb {
-      grid-template-columns: repeat(5, minmax(150px, 1fr));
-    }
-    .img_simbolo {
-      width: 150px;
-    }
-}
-
-/* Large screens (desktops) */
-@media screen and (min-width: 1200px) and (max-width: 1919px) {
-    .topo {
-      height: 350px;
-    }
-    .mb-3, .d-block.my-3 {
-      max-width: 1000px;
-    }
-    .linha-simb {
-      grid-template-columns: repeat(5, minmax(120px, 1fr));
-    }
-    .img_simbolo {
-      width: 120px;
-    }
-}
-
-/* Medium screens (tablets) */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .topo {
-      height: 250px;
-    }
-    .mb-3, .d-block.my-3 {
-      max-width: 800px;
-    }
-    .linha-simb {
-      grid-template-columns: repeat(5, minmax(100px, 1fr));
-    }
-    .img_simbolo {
-      width: 100px;
-    }
-}
-
-/* Small screens (mobiles) */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .topo {
-      height: 200px;
-    }
-    .mb-3, .d-block.my-3 {
-      max-width: 600px;
-    }
-    .linha-simb {
-      grid-template-columns: repeat(4, minmax(80px, 1fr));
-    }
-    .img_simbolo {
-      width: 80px;
-    }
-    .custom-control-label {
-      font-size: 14px;
-    }
-    .custom-control-input {
-      margin: 1%;
-    }
-}
-
-/* Extra small screens (small mobiles) */
-@media screen and (max-width: 449px) {
-    .topo {
-      height: 150px;
-    }
-    .mb-3, .d-block.my-3 {
-      max-width: 400px;
-    }
-    .linha-simb {
-      grid-template-columns: repeat(3, minmax(60px, 1fr));
-    }
-    .img_simbolo {
-      width: 60px;
-    }
-    .custom-control-label {
-      font-size: 12px;
-    }
-    .custom-control-input {
-      margin: 0.5%;
-    }
-}
 /* ########################################################################################## */
 
 /* Tela de carregamento */
 #loading-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    text-align: center;
-    padding-top: 20%;
-    font-size: 24px;
-    z-index: 1000;
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+text-align: center;
+padding-top: 20%;
+font-size: 24px;
+z-index: 1000;
 }
-
 /* Janela de confirmação */
 #confirmation-popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ffffff;
-  text-align: center;
-  padding-top: 20%;
-  font-size: 24px;
-  z-index: 1001;
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+color: #ffffff;
+text-align: center;
+padding-top: 20%;
+font-size: 24px;
+z-index: 1001;
 }
 #confirmation-popup #confirmation-message {
-    margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
+/* ########################################################################################## */
+/* Add media queries for responsiveness */
+
+@media screen and (min-width: 800px) {
+body{
+    display: flex;
+}
+.p-5-top{
+    width: 100%;
+
+}
+.p-5-top2{
+    position: fixed;
+
+}
+.p-5-form{
+    width: 100%;
+}
+}
+@media (max-width:800px) {
+body{
+    display: absolute;
+}
+.p-5-top{
+    width: 100%;
+
+}
+.p-5-top2{
+    align-items: center;
+    padding: 20px;
+    border-radius: 40px  40px 40px 40px;
+    top: 20px;
+    width: 100%;
+    position: absolute;
+}
+.p-5-form{
+    width: 100%;
+}
+}
