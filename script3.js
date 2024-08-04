@@ -135,7 +135,7 @@ document.getElementById('dataForm').addEventListener('submit', function(event) {
             n_pedido: $('#n_pedido').val(),
             email: $('#email').val(),
             numCIDs: $('#numCIDs').val(),
-            cids: $('.cid-input').map(function () { return $(this).val(); }).get(),
+            cidInputs: $('.cid-input').map(function () { return $(this).val(); }).get(),
             termo: $('input[name="termo"]:checked').val(),
             colar: $('input[name="colar"]:checked').val(),
             cor: $('input[name="cor"]:checked').val(),
