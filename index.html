@@ -4,596 +4,594 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de confecção do cartão QR Code</title>
+  <title>Inclusão em Ação</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  
-  
-  
   <link rel="stylesheet" href="style.css">
-
-
-
 </head>
+
 <body>
-  <div class="topo"></div>
-  <div class="p-5">
-    <h1 class="titulo">!Formulário de confecção do cartão QR Code</h1>
-    <span class="text">
-      <p>Preencha seus dados para a personalização do seu cartão QR Code, os dados serão impressos no verso do cartão e o símbolo será escolhido para a frente do cartão. PREENCHA COM ATENÇÃO!!! O cartão será confeccionado de acordo com as informações inseridas pelo cliente. Em caso de erros, entre em contato com a gente. Não serão refeitos e reenviados cartões com erros de digitação. Reembolso e Devolução poderão ser solicitados no seguinte caso: Em que o produto tenha sido entregue danificado ou personalizado de maneira errada por desatenção por parte da empresa ao formulário preenchido pelo cliente. Para mais informações leia nossa Política de Reembolso e Devolução no site. Tempo de confecção: 10 dias úteis. Tempo de envio: o selecionado pelo cliente (pac, sedex, ou frete gratis) (Obs: em caso de retorno do pacote ao remetente devido algum erro no endereço ou pela falta de acompanhamento das instruções pelo código de postagem, será cobrado o frete do reenvio.) CLÁUSULA DE SEGURANÇA DO QR CODE: Por uma questão de segurança do usuário, nosso protocolo padrão é manter o link do QR Code personalizado privado para edição somente ao gmail habilitado do cliente, e aberto somente a visualização aos demais leitores. Quaisquer alterações solicitadas pelo usuário é de total responsabilidade do mesmo, sendo conscentido ao finalizar esse formulário.</p>
-    </span>
-  </div>
+    <div class="p-5-top">
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <span class="text">
+            <p>Preencha seus dados para a personalização do seu cartão QR Code, os dados serão impressos no verso do cartão e o símbolo será escolhido para a frente do cartão. PREENCHA COM ATENÇÃO!!! O cartão será confeccionado de acordo com as informações inseridas pelo cliente. Em caso de erros, entre em contato com a gente. Não serão refeitos e reenviados cartões com erros de digitação. Reembolso e Devolução poderão ser solicitados no seguinte caso: Em que o produto tenha sido entregue danificado ou personalizado de maneira errada por desatenção por parte da empresa ao formulário preenchido pelo cliente. Para mais informações leia nossa Política de Reembolso e Devolução no site. Tempo de confecção: 10 dias úteis. Tempo de envio: o selecionado pelo cliente (pac, sedex, ou frete gratis) (Obs: em caso de retorno do pacote ao remetente devido algum erro no endereço ou pela falta de acompanhamento das instruções pelo código de postagem, será cobrado o frete do reenvio.) CLÁUSULA DE SEGURANÇA DO QR CODE: Por uma questão de segurança do usuário, nosso protocolo padrão é manter o link do QR Code personalizado privado para edição somente ao gmail habilitado do cliente, e aberto somente a visualização aos demais leitores. Quaisquer alterações solicitadas pelo usuário é de total responsabilidade do mesmo, sendo conscentido ao finalizar esse formulário.</p>
+        </span>
+    </div>
+    <br>
+    <div class="p-5-top2">
+        <div class="img-box">
+            <img src="https://lh4.googleusercontent.com/XEDlK9ZVVRDq4VQ1el6jz1mY1AQQK3-5PBsBkf7KZydPAEglB1CPpqKNF689_GTiN5-2QF4pDilYvrrxQThEy6FUh9C6QWrpM6amJpuV7H1ljMdShhHXeaq0QJiLbVyhnw=w6912">
+        </div>
+        <br>
+        <h1 class="titulo">Formulário de confecção do cartão QR Code</h1>
+        <span class="text">
+        </span>
+    </div>
+    <br>
+    <!-- FORMULÁRIO - INICIO
+         <form class="p-5-form" id="dataForm" onsubmit="handleSubmit(event)"> -->
+    <form class="p-5-form" id="dataForm" action="#" name="submit-to-google-sheet">
 
-        <!-- FORMULÁRIO - INICIO -->
-        <form class="p-5" id="dataForm" onsubmit="handleSubmit(event)">
-            <hr>
-            <!-- Nº DO PEDIDO - INICIO -->
-            <h4 class="mb-3">Número do seu pedido no nosso site</h4>
-            <div  class="d-block my-3">
-                <label class="form-label">
-                    Número do seu pedido no nosso site
-                </label>
-                <input id="n_pedido" type="text" class="form-control" placeholder="0000" required>
-            </div>
-            <!-- Nº DO PEDIDO - FIM -->
+        <!-- Nº DO PEDIDO - INICIO -->
+        <h4 class="mb-3">Número do seu pedido no nosso site</h4>
+        <div  class="d-block my-3">
+            <label class="form-label">
+                Número do seu pedido no nosso site
+            </label>
+            <input id="n_pedido" type="text" name="n_pedido" class="form-control" placeholder="0000" inputmode="numeric" required>
+        </div>
+        <!-- Nº DO PEDIDO - FIM -->
 
-            <!-- MODELO COLAR - INICIO -->
-            <h4 class="mb-3">Modelo do colar</h4>
+        <!-- MODELO COLAR - INICIO
+        <h4 class="mb-3">Modelo do colar</h4>
+        
             <div class="d-block my-3">
-                <div class="custom-control custom-radio">
-                    <input id="colar1" name="colar" type="radio" class="custom-control-input" value="Girassol" required="">
-                    <label class="custom-control-label" for="colar1">Girassol</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input id="colar2" name="colar" type="radio" class="custom-control-input" value="Quebra-Cabeça" required="">
-                    <label class="custom-control-label" for="colar2">Quebra-Cabeça</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input id="colar3" name="colar" type="radio" class="custom-control-input" value="Neurodiversidade" required="">
-                    <label class="custom-control-label" for="colar3">Neurodiversidade</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input id="colar4" name="colar" type="radio" class="custom-control-input" value="SOS Emergência" required="">
-                    <label class="custom-control-label" for="colar4">SOS Emergência</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input id="colar5" name="colar" type="radio" class="custom-control-input" value="Não comprei colar, apenas cartão avulso" required="">
-                    <label class="custom-control-label" for="colar5">Não comprei colar, apenas cartão avulso</label>
-                </div>
-            </div>
-            <!-- MODELO COLAR - FIM -->
-
-            <!-- COR CARTÃO - INICIO -->
-            <h4 class="mb-3">Cor do cartão QR Code</h4>
-            <div class="d-block my-3">
-                <label class="form-label">
-                    Cor
-                </label>
-                <div class="custom-control custom-radio">
-                    <input id="cor1" name="cor" type="radio" class="custom-control-input" value="Azul" required="">
-                    <label class="custom-control-label" for="cor1">Azul</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input id="cor2" name="cor" type="radio" class="custom-control-input" value="Rosa" required="">
-                    <label class="custom-control-label" for="cor2">Rosa</label>
-                </div>
-            </div>
-            <!-- COR CARTÃO - FIM -->
-
-            <!-- SIMBOLO - INICIO -->
-            <h4 class="mb-3">Escolha o Símbolo da deficiência para o cartão</h4>
-            <div class="d-block my-3">
-                <label class="form-label">
-                    É permitida, somente, a escolha de um simbolo.
-                </label>
-
-                <br>
-
-                <!--div class="custom-control custom-radio"-->
-                <!--div class="simbolos"-->
-                <div class="linha-simb">
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(8).png?raw=true" class="img_simbolo">
-                    <label class="custom-control-label" for="simbolo1">BIPOLAR
-                    <input id="simbolo1" name="simbolo" type="radio" class="custom-control-input" value="BIPOLAR" required="">
+                <div class="linha-multipla">
+                    <div class="multipla">
+                    <label class="custom-control-label" for="colar1">Girassol
+                        <input id="colar1" name="colar" type="radio" class="custom-control-input" value="Girassol" required="">
                     </label>
                     </div>
 
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(7).png?raw=true" class="img_simbolo">
-                    <label class="custom-control-label" for="simbolo2">ACESSIBILIDADE
-                    <input id="simbolo2" name="simbolo" type="radio" class="custom-control-input" value="ACESSIBILIDADE" required="">
+                    <div class="multipla">
+                    <label class="custom-control-label" for="colar2">Quebra-Cabeça
+                        <input id="colar2" name="colar" type="radio" class="custom-control-input" value="Quebra-Cabeça" required="">
                     </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(3).png?raw=true" class="img_simbolo">
-                    <label class="custom-control-label" for="simbolo2">DEFICIÊNCIA INTELECTUAL
-                    <input id="simbolo3" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA INTELECTUAL" required="">
-                    </label>
-                    </div>                    
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo4">LIBRAS
-                    <input id="simbolo4" name="simbolo" type="radio" class="custom-control-input" value="LIBRAS" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo5">DEFICIÊNCIA VISUAL
-                    <input id="simbolo5" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA VISUAL" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(37).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo6">DEFICIÊNCIA AUDITIVA
-                    <input id="simbolo6" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA AUDITIVA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(4).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo7">DEFICIÊNCIA FÍSICA
-                    <input id="simbolo7" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA FÍSICA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(34).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo8">NANISMO
-                    <input id="simbolo8" name="simbolo" type="radio" class="custom-control-input" value="NANISMO" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo9">BAIXA VISÃO
-                    <input id="simbolo9" name="simbolo" type="radio" class="custom-control-input" value="BAIXA VISÃO" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(36).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo10">VISÃO MONOCULAR
-                    <input id="simbolo10" name="simbolo" type="radio" class="custom-control-input" value="VISÃO MONOCULAR" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(2).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo11">OSTOMIA
-                    <input id="simbolo11" name="simbolo" type="radio" class="custom-control-input" value="OSTOMIA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(6).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo12">EMERGÊNCIA
-                    <input id="simbolo12" name="simbolo" type="radio" class="custom-control-input" value="EMERGÊNCIA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(5).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">GIRASSOL
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="GIRASSOL" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(33).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo14">DOENÇAS RARAS
-                    <input id="simbolo14" name="simbolo" type="radio" class="custom-control-input" value="DOENÇAS RARAS" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo15">DOENÇA DE CROHN
-                    <input id="simbolo15" name="simbolo" type="radio" class="custom-control-input" value="DOENÇA DE CROHN" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(27).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">PANDI
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="PANDI" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">SÍNDROME DO X FRÁGIL
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DO X FRÁGIL" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(28).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">DIABETES
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="DIABETES" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(32).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">ESQUIZOFRENIA
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ESQUIZOFRENIA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(29).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">BORDERLINE
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="BORDERLINE" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(30).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">HEMODIÁLISE
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="HEMODIÁLISE" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(31).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">LÚPUS
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="LÚPUS" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">ANEMIA FALCIFORME
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ANEMIA FALCIFORME" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(25).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">AUTISMO
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="AUTISMO" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(9).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">COFFIN-SIRIS
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="COFFIN-SIRIS" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(10).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">CARDIOPATIA
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="CARDIOPATIA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(11).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">RCU
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="RCU" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(12).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">EPILEPSIA
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="EPILEPSIA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(13).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">PARALISIA CEREBRAL
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="PARALISIA CEREBRAL" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(14).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">SÍNDROME DE DOWN
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DE DOWN" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(21).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">SÍNDROME DE TOURETTE
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DE TOURETTE" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(26).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">TDAH
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="TDAH" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">FIBROMIALGIA
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="FIBROMIALGIA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(00).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">SÍNDROME DE TURNER
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DE TURNER" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(15).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">ESCLEROSE MÚLTIPLA
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ESCLEROSE MÚLTIPLA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(16).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">PRADER WILLI
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="PRADER WILLI" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(17).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">FIBROSE CÍSTICA
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="FIBROSE CÍSTICA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(18).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">HII
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="HII" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(1).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">INFINITO
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="INFINITO" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(19).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">AUTISMO E EPILEPSIA
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="AUTISMO E EPILEPSIA" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(20).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">SED
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SED" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(22).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">ALZHEIMER
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ALZHEIMER" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(23).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">EM/SFC
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="EM/SFC" required="">
-                    </label>
-                    </div>
-
-                    <div class="simbolos">
-                    <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(24).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
-                    <label class="custom-control-label" for="simbolo13">NF
-                    <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="NF" required="">
-                    </label>
-                    </div>
-
-                </div>
-
-                </div>
-            </div>
-            <!-- SIMBOLO - FIM -->
-
-            <!-- GMAIL - INICIO -->
-
-            <div class="mb-3">
-            <h4>E-mail</h4>
-            </div>
-            <div class="d-block my-3">
-                <label class="form-label">E-mail:</label>
-                <input type="email" id="email" class="form-control" name="email" required>
-            </div>
-            <!-- GMAIL - FIM -->            
-
-            <!-- INFORMAÇÕES IMPRESSAS NO CARTÃO - INICIO -->
-
-            <div class="mb-3">
-            <h4>Informações impressas no cartão</h4>
-            </div>
-            <div class="d-block my-3">
-                <label class="form-label">
-                  Preencha as lacunas com os dados para contato em caso de emergência.
-                </label>
-            </div>
-
-            <!-- NOME - INICIO -->
-            <div class="mb-3">
-            <h4>Nome</h4>
-            </div>
-            <div class="d-block my-3">
-              <label class="form-label">Nome completo</label>
-              <input id="nome" type="text" class="form-control" placeholder="" value="" required="">
-            </div>
-            <!-- NOME - FIM -->
-
-            <!-- DATA - INICIO -->
-            <div class="mb-3">
-            <h4>Data de nascimento</h4>
-            </div>
-            <div class="d-block my-3">
-                <div class="col-sm-6">
-                    <label class="form-label">Data de nascimento</label>
-                    <input id="data" type="text" class="form-control" placeholder="00/00/0000" required>
-                </div>
-            </div>
-            <!-- DATA - FIM -->
-
-
-            <!-- CONTATO 1 - INICIO -->
-            <div class="mb-3">
-                <h4>Contato de emergência</h4>
-            </div>
-            <div class="d-block my-3">
-                <label class="form-label">Contato de emergência 1</label>
-
-              <div class="col-12" id="linTel">
-                  <div class="custom-control custom-radio">
-                      <input id="cel1" name="contato1" type="radio" class="custom-control-input" value="Celular" required>
-                      <label class="custom-control-label" for="cel1">Celular</label>
-
-                      <input id="fix1" name="contato1" type="radio" class="custom-control-input" value="Fixo" checked required>
-                      <label class="custom-control-label" for="fix1">Telefone</label>
-                  
-                      <input id="emerg1" type="text" class="form-control" placeholder="(00) 0000-0000" required>
-
-                    </div>
-                  
-              </div>
-
-            </div>
-            <!-- CONTATO 1 - FIM -->
-
-            <!-- CONTATO 2 - INICIO -->
-            <div class="d-block my-3">
-                <div class="col-12" id="linTel">
-                    <label class="form-label">Contato de emergência 2</label>
-                    <div class="custom-control custom-radio">
-                        <input id="cel2" name="contato2" type="radio" class="custom-control-input" value="Celular" checked required>
-                        <label class="custom-control-label" for="cel2">Celular</label>
-
-                        <input id="fix2" name="contato2" type="radio" class="custom-control-input" value="Fixo" required>
-                        <label class="custom-control-label" for="fix2">Telefone</label>
-                        <input id="emerg2" type="text" class="form-control" placeholder="(00) 90000-0000">
                     </div>
                     
+                    <div class="multipla">
+                    <label class="custom-control-label" for="colar3">Neurodiversidade
+                        <input id="colar3" name="colar" type="radio" class="custom-control-input" value="Neurodiversidade" required="">
+                    </label>
+                    </div>
+                        
+                    <div class="multipla">
+                    <label class="custom-control-label" for="colar4">SOS emergência
+                        <input id="colar4" name="colar" type="radio" class="custom-control-input" value="SOS Emergência" required="">
+                    </label>
+                    </div>
+                    </div>    
+                    <div class="multipla">
+                    <label class="custom-control-label" for="colar5">Não comprei colar, apenas cartão avulso
+                        <input id="colar5" name="colar" type="radio" class="custom-control-input" value="Não comprei colar, apenas cartão avulso" required="">
+                    </label>
+
+                </div>
+            </div> -->
+        <!-- MODELO COLAR - FIM -->
+
+        <!-- COR CARTÃO - INICIO -->
+        <h4 class="mb-3">Cor do cartão QR Code</h4>
+        <div class="d-block my-3">
+
+            <div class="linha-multipla">
+
+                <div class="multipla">
+                    <label class="custom-control-label" for="cor1">Azul
+                        <input id="cor1" name="cor" type="radio" class="custom-control-input" value="Azul" required="">
+                    </label>
+                </div>
+                        
+                <div class="multipla">
+                    <label class="custom-control-label" for="cor2">Rosa
+                        <input id="cor2" name="cor" type="radio" class="custom-control-input" value="Rosa" required="">
+                    </label>
                 </div>
             </div>
-            <!-- CONTATO 2 - FIM -->
+        </div>
+        <!-- COR CARTÃO - FIM -->
 
-            <!-- CID - INICIO -->
-            <div class="mb-3">
-            <h4>Número do CID</h4>
-            </div>
-            <div class="d-block my-3">
-                <label class="form-label">Quantos CID's você tem?</label>
-                <select id="numCIDs" class="form-select" required>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-            <div id="cidInputs"></div>
-            <!-- CID - FIM -->
+        <!-- SIMBOLO - INICIO -->
+        <h4 class="mb-3">Escolha o Símbolo da deficiência para o cartão</h4>
+        <div class="d-block my-3">
+            <label class="form-label">
+                É permitida, somente, a escolha de um simbolo.
+            </label>
 
-            <!-- TERMO - INICIO -->
-            <div class="mb-3">
-            <h4>Termo de Responsabilidade</h4>
-            </div>
-            <div class="d-block my-3">
-                <label class="form-label">Termos de Responsabilidade para o uso pessoal do colar de Girassol:</label>
-                
-                <p>Ao finalizar esse formulário você consente de que possui ciência sobre o uso consciente e a Lei Federal do Colar de Girassol.</p>
-                <p>"§ 2º A utilização do símbolo de que trata o caput deste artigo não dispensa a apresentação de documento comprobatório da deficiência, caso seja solicitado pelo atendente ou pela autoridade competente.”</p>
-                <p>Disponível: LEI Nº 14.624, DE 17 DE JULHO DE 2023</p>
-                <div class="custom-control custom-radio">
-                    <input id="termo" name="termo" type="radio" class="custom-control-input" value="Declaro que Li e Aceito o Termo." required>
-                    <label class="custom-control-label" for="termo">Declaro que Li e Aceito o Termo.</label>
+            <br>
+
+            <!--div class="custom-control custom-radio"-->
+            <!--div class="simbolos"-->
+            <div class="linha-simb">
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(8).png?raw=true" class="img_simbolo">
+                <label class="custom-control-label" for="simbolo1">BIPOLAR
+                <input id="simbolo1" name="simbolo" type="radio" class="custom-control-input" value="BIPOLAR" required="">
+                </label>
                 </div>
-                <!-- TERMO - FIM -->
 
-            <hr class="my-4">
-            <button class="w-100 btn btn-outline-warning btn-lg" type="submit">Enviar</button>
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(7).png?raw=true" class="img_simbolo">
+                <label class="custom-control-label" for="simbolo2">ACESSIBILIDADE
+                <input id="simbolo2" name="simbolo" type="radio" class="custom-control-input" value="ACESSIBILIDADE" required="">
+                </label>
+                </div>
 
-        </form>
-        <!-- FORMULÁRIO - FIM -->
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(43).png?raw=true" class="img_simbolo">
+                <label class="custom-control-label" for="simbolo2">DEFICIÊNCIA INTELECTUAL
+                <input id="simbolo3" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA INTELECTUAL" required="">
+                </label>
+                </div>                    
 
-        <!-- FOOTER - INICIO -->
-        <footer class="text-muted py-5">
-            <div class="container">
-                <p class="float-end mb-1">
-                    <a href="#">
-                        <button type="button" class="btn btn-outline-warning">Topo</button>
-                    </a>
-                </p>
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(46).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo4">SURDOCEGO
+                <input id="simbolo4" name="simbolo" type="radio" class="custom-control-input" value="SURDOCEGO" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(44).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo5">DEFICIÊNCIA VISUAL
+                <input id="simbolo5" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA VISUAL" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(37).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo6">DEFICIÊNCIA AUDITIVA
+                <input id="simbolo6" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA AUDITIVA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(4).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo7">DEFICIÊNCIA FÍSICA
+                <input id="simbolo7" name="simbolo" type="radio" class="custom-control-input" value="DEFICIÊNCIA FÍSICA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(34).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo8">NANISMO
+                <input id="simbolo8" name="simbolo" type="radio" class="custom-control-input" value="NANISMO" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(44).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo9">BAIXA VISÃO
+                <input id="simbolo9" name="simbolo" type="radio" class="custom-control-input" value="BAIXA VISÃO" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(36).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo10">VISÃO MONOCULAR
+                <input id="simbolo10" name="simbolo" type="radio" class="custom-control-input" value="VISÃO MONOCULAR" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(2).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo11">OSTOMIA
+                <input id="simbolo11" name="simbolo" type="radio" class="custom-control-input" value="OSTOMIA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(6).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo12">EMERGÊNCIA
+                <input id="simbolo12" name="simbolo" type="radio" class="custom-control-input" value="EMERGÊNCIA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(5).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">GIRASSOL
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="GIRASSOL" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(33).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo14">DOENÇAS RARAS
+                <input id="simbolo14" name="simbolo" type="radio" class="custom-control-input" value="DOENÇAS RARAS" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(40).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo15">DOENÇA DE CROHN
+                <input id="simbolo15" name="simbolo" type="radio" class="custom-control-input" value="DOENÇA DE CROHN" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(27).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">PANDI
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="PANDI" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(39).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">SÍNDROME DO X FRÁGIL
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DO X FRÁGIL" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(28).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">DIABETES
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="DIABETES" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(32).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">ESQUIZOFRENIA
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ESQUIZOFRENIA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(29).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">BORDERLINE
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="BORDERLINE" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(30).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">HEMODIÁLISE
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="HEMODIÁLISE" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(31).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">LÚPUS
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="LÚPUS" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(42).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">ANEMIA FALCIFORME
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ANEMIA FALCIFORME" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(25).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">AUTISMO
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="AUTISMO" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(9).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">COFFIN-SIRIS
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="COFFIN-SIRIS" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(10).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">CARDIOPATIA
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="CARDIOPATIA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(11).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">RCU
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="RCU" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(12).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">EPILEPSIA
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="EPILEPSIA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(13).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">PARALISIA CEREBRAL
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="PARALISIA CEREBRAL" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(14).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">SÍNDROME DE DOWN
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DE DOWN" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(21).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">SÍNDROME DE TOURETTE
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DE TOURETTE" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(26).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">TDAH
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="TDAH" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(41).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">FIBROMIALGIA
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="FIBROMIALGIA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(47).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">SÍNDROME DE TURNER
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SÍNDROME DE TURNER" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(15).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">ESCLEROSE MÚLTIPLA
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ESCLEROSE MÚLTIPLA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(16).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">PRADER WILLI
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="PRADER WILLI" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(17).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">FIBROSE CÍSTICA
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="FIBROSE CÍSTICA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(18).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">HII
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="HII" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(38).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">INFINITO
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="INFINITO" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(19).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">AUTISMO E EPILEPSIA
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="AUTISMO E EPILEPSIA" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(20).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">SED
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="SED" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(22).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">ALZHEIMER
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="ALZHEIMER" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(23).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">EM/SFC
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="EM/SFC" required="">
+                </label>
+                </div>
+
+                <div class="simbolos">
+                <img src="https://github.com/DelNeroDados/Simbolo/blob/main/simbolo%20(24).png?raw=true" class="img_simbolo" alt="Imagem Ajustável">
+                <label class="custom-control-label" for="simbolo13">NF
+                <input id="simbolo13" name="simbolo" type="radio" class="custom-control-input" value="NF" required="">
+                </label>
+                </div>
+
             </div>
-        </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzC/2TxP6z6p7b6/9amtTUmZ4lGXV9/jf4x0gu0B7l14" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IQb0EO8B8y+IYbJo5+dALC2PsmXISB5r12qxskh/6uX9Ppcp8+PLVNfC5c2vFSk4" crossorigin="anonymous"></script>
+            </div>
+        </div>
+        <!-- SIMBOLO - FIM -->
 
-  <!-- Tela de carregamento -->
-  <div id="loading-overlay">Enviando, por favor aguarde...</div>
+        <hr>
 
-  <!-- Janela de confirmação -->
-  <div id="confirmation-popup">
-    <div id="confirmation-message">Seu formulário foi enviado com sucesso!</div>
-  </div>
+        <!-- GMAIL - INICIO -->
+        <div class="mb-3">
+        <h4>E-mail</h4>
+        </div>
+        <div class="d-block my-3">
+            <label class="form-label">E-mail:</label>
+            <input type="email" id="email" class="form-control" name="email" required>
+        </div>
+        <!-- GMAIL - FIM -->            
+        <hr>
+        <!-- INFORMAÇÕES IMPRESSAS NO CARTÃO - INICIO -->
+        <div class="mb-3">
+        <h4>Informações impressas no cartão</h4>
+        </div>
+        <div class="d-block my-3">
+            <label class="form-label">
+                Preencha as lacunas com os dados para contato em caso de emergência.
+            </label>
+        </div>
 
+        <hr>
 
+        <!-- NOME - INICIO -->
+        <div class="mb-3">
+        <h4>Nome</h4>
+        </div>
+        <div class="d-block my-3">
+            <label class="form-label">Nome completo</label>
+            <input id="nome" name="nome" type="text" class="form-control" placeholder="" value="" required="">
+        </div>
+        <!-- NOME - FIM -->
+        <hr>
 
-  <script src="script.js"></script>
-  <script>
-        document.getElementById('dataForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+        <!-- DATA - INICIO -->
+        <div class="mb-3">
+        <h4>Data de nascimento</h4>
+        </div>
+        <div class="d-block my-3">
+                <label class="form-label">Data de nascimento</label>
+                <input id="data" name="data" type="text" class="form-control" placeholder="00/00/0000" inputmode="numeric" required>
+        </div>
+        <!-- DATA - FIM -->
 
-            const formData = new FormData(event.target);
-            const data = {};
-            formData.forEach((value, key) => (data[key] = value));
+        <hr>
 
-            fetch('https://script.google.com/macros/s/AKfycbxdt4vZ_oUZBq82wqhqTTMmfVWmGk60b1W9k6V63UrbErWZtGdeAvEjyMQDG4IhgQOl/exec', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            })
-            .then(response => response.json())
-            .then(data => {
-            alert('Dados enviados com sucesso!');
-            })
-            .catch(error => {
-            console.error('Erro ao enviar os dados:', error);
-            });
-        });
+        <!-- CONTATO 1 - INICIO -->
+        <div class="mb-3">
+            <h4>Contato de emergência</h4>
+        </div>
+        <div class="d-block my-3">
+            <label class="form-label">Contato de emergência 1</label>
 
-  </script>
+            <div class="linha-multipla">
+                <div class="multipla">
+                    <input id="cel1" name="contato1" type="radio" class="custom-control-input" value="Celular" required>
+                    <label class="custom-control-label" for="cel1">Celular</label>
+                </div>
+                <div class="multipla">
+                    <input id="fix1" name="contato1" type="radio" class="custom-control-input" value="Fixo" checked required>
+                    <label class="custom-control-label" for="fix1">Telefone</label>
+                </div>
+            </div>
+            <input id="emerg1" type="text" name="contato_1" class="form-control" placeholder="(00) 0000-0000" inputmode="numeric" required>
+        </div>
+        <!-- CONTATO 1 - FIM -->
 
+        <!-- CONTATO 2 - INICIO -->
+        <div class="d-block my-3">
+            <label class="form-label">Contato de emergência 2</label>
+            <div class="linha-multipla">
+                <div class="multipla">
+                    <input id="cel2" name="contato2" type="radio" class="custom-control-input" value="Celular" checked required>
+                    <label class="custom-control-label" for="cel2">Celular</label>
+                </div>
+                <div class="multipla">
+                    <input id="fix2" name="contato2" type="radio" class="custom-control-input" value="Fixo" required>
+                    <label class="custom-control-label" for="fix2">Telefone</label>
+                </div>
+            </div>
+            <input id="emerg2" name="contato_2" type="text" class="form-control" placeholder="(00) 90000-0000" inputmode="numeric">
 
+        </div>
+        <!-- CONTATO 2 - FIM -->
+
+        <hr>
+
+        <!-- CID - INICIO -->
+        <div class="mb-3">
+        <h4>Número do CID</h4>
+        </div>
+        <div class="d-block my-3">
+            <label class="form-label">Quantos CID's você tem?</label>
+            <select id="numCIDs" name="numCIDs" class="form-select" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+        </div>
+        <div id="cidInputs" name="cidInputs"></div>
+        <!-- CID - FIM -->
+
+        <hr>
+
+        <!-- TERMO - INICIO -->
+        <div class="mb-3">
+        <h4>Termo de Responsabilidade</h4>
+        </div>
+        <div class="d-block my-3">
+            <label class="form-label">Termos de Responsabilidade para o uso pessoal do colar de Girassol:</label>
+            
+            <p>Ao finalizar esse formulário você consente de que possui ciência sobre o uso consciente e a Lei Federal do Colar de Girassol.</p>
+            <p>"§ 2º A utilização do símbolo de que trata o caput deste artigo não dispensa a apresentação de documento comprobatório da deficiência, caso seja solicitado pelo atendente ou pela autoridade competente.”</p>
+            <p>Disponível: LEI Nº 14.624, DE 17 DE JULHO DE 2023</p>
+            
+            <label class="custom-control-label" for="termo">
+                <input id="termo" name="termo" type="radio" class="custom-control-input" value="Declaro que Li e Aceito o Termo." required>
+                Declaro que Li e Aceito o Termo.
+            </label>
+            <!-- TERMO - FIM -->
+
+        <hr class="my-4">
+        <button class="w-100 btn btn-outline-warning btn-lg" type="submit">Enviar</button>
+
+    </form>
+    <!-- FORMULÁRIO - FIM -->
+
+    <!-- FOOTER - INICIO -->
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">
+                    <button type="button" class="btn btn-outline-warning">Topo</button>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzC/2TxP6z6p7b6/9amtTUmZ4lGXV9/jf4x0gu0B7l14" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IQb0EO8B8y+IYbJo5+dALC2PsmXISB5r12qxskh/6uX9Ppcp8+PLVNfC5c2vFSk4" crossorigin="anonymous"></script>
+    
+    <!-- Tela de carregamento -->
+    <div id="loading-overlay">Enviando, por favor aguarde...</div>
+    
+    <!-- Janela de confirmação -->
+    <div id="confirmation-popup">
+      <div id="confirmation-message">Seu formulário foi enviado com sucesso!</div>
+    </div>
+    <script src="script_site.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
