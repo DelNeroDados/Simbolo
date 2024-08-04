@@ -56,7 +56,7 @@ function createCIDInput(index) {
     return `
         <div class="mb-3">
         <label class="form-label">CID ${index + 1}</label>
-        <input type="text" class="form-control cid-input" name="cid-${index}" placeholder="CID ${index + 1}" required>
+        <input type="text" id="cids" class="form-control cid-input" name="cid-${index}" placeholder="CID ${index + 1}" required>
         </div>
     `;
 }
@@ -123,7 +123,7 @@ function handleSubmit(event) {
         n_pedido: $('#n_pedido').val(),
         email: $('#email').val(),
         numCIDs: $('#numCIDs').val(),
-        cids: $('.cid-input').map(function () { return $(this).val(); }).get(),
+        cids: $('#cids').map(function () { return $(this).val(); }).get(),
         termo: $('input[name="termo"]:checked').val(),
         colar: $('input[name="colar"]:checked').val(),
         cor: $('input[name="cor"]:checked').val(),
