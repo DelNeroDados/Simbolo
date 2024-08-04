@@ -1,5 +1,5 @@
 // clique em implantar (no script.google) para obter a url
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzBp5T5XVKdApw02G1pl1_eQkaRClaKW4SJ7Cv6S2x32DDbVGmjoF0Gq6ABEe_wBLl1Ww/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz_29OXaLCh3mkPmDaiKNVhUd3e51qwcU3rXecpYakf-TaXoE_tQG8iTTYczdU0bK5qhw/exec';
 const form = document.forms['submit-to-google-sheet']; // formulario no index
 
 form.addEventListener('submit', e =>
@@ -26,4 +26,7 @@ form.addEventListener('submit', e =>
 		console.error(error);
 	})
 });
+
+
+
 
